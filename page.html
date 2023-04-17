@@ -26,22 +26,22 @@
         <main>
             <div class="records">
                 <div class="records-header">
-                    <h1>Jornal A Tarde</h1>
+                    <h2>Jornal A Tarde</h2>
                     <p>1 registro encontrado</p>
                 </div>
                 <table>
-                    <tr>
+                    <tr class="tr1">
                         <th>id</th>
-                        <th>pagina clipping</th>
+                        <th>Pagina clipping</th>
                         <th>Jornal</th>
                         <th>Titulo</th>
                         <th>Clientes</th>
-                        <th>Taxinomias</th>
+                        <th>Taxonomias</th>
                         <th>Webp</th>
                         <th><a href="#">Gerar Materias</a></th>
                         <th><a href="#">Ver Materias</a></th>
                     </tr>
-                    <tr>
+                    <tr class="tr2">
                         <td>589</td>
                         <td>4482</td>
                         <td>(6) A tarde</td>
@@ -54,8 +54,9 @@
                     </tr>
                 </table>
             </div>
-            <div class="taxinomias">
-                <h2>Taxinomias encontradas:</h2>
+            <hr />
+            <div class="taxonomias">
+                <h3>Taxonomias encontradas:</h3>
                 <p>
                     16 -> semob - prefeitura de salvador -> semob | secretaria <-> municipal <2> mobilidade <-> urbana
                 </p>
@@ -85,6 +86,105 @@
                 <a href="#">11</a>
                 <a href="#">12</a>
             </nav>
+            <div class="img-background">
+                <img src="jornal.svg" width="auto" height="auto" alt="Jornal" />
+            </div>
+
+            <form action="">
+                <div class="form-header">
+                    <span class="span-jornal">
+                        <p>Jornal</p>
+                        <span>(2) A Tarde</span>
+                    </span>
+                    <span class="span-jornal">
+                        <p>Pagina Clipping</p>
+                        <span>4482</span>
+                    </span>
+                </div>
+
+                <div class="title-day">
+                    <div class="div">
+                        <label for="title">Titulo</label>
+                        <br />
+                        <input type="text" name="title" id="title" />
+                    </div>
+                    <div class="div">
+                        <label for="day">Dia</label>
+                        <br />
+                        <input type="text" name="day" id="day" />
+                    </div>
+                </div>
+                <div class="block-title">
+                    <div class="div">
+                        <label for="block-title">Blocos Título</label>
+                        <br />
+                        <input type="text" name="block-title" id="block-title" />
+                        <button>Limpar</button>
+                    </div>
+
+                    <div class="div">
+                        <label for="block">Bloco</label>
+                        <br />
+                        <input type="text" name="block" id="block" />
+                        <button>Limpar</button>
+                    </div>
+                </div>
+
+                <div class="edit-jour">
+                    <div class="div">
+                        <label for="Editorial">Editoria</label>
+                        <br />
+                        <input type="text" name="Editorial" id="Editorial" />
+                    </div>
+
+                    <div class="div">
+                        <label for="journalist">Jornalista</label>
+                        <br />
+                        <input type="text" name="journalist" id="journalist" />
+                    </div>
+                </div>
+
+                <div class="col-pag">
+                    <div class="div">
+                        <label for="column">Coluna</label>
+                        <br />
+                        <input type="text" name="column" id="column" />
+                    </div>
+
+                    <div class="div-page-beginning">
+                        <label for="page-beginning">Pág. Início</label>
+                        <br />
+                        <input type="text" name="page-beginning" id="page-beginning" />
+                    </div>
+
+                    <div class="div">
+                        <label for="page-end">Pág. Fim</label>
+                        <br />
+                        <input type="text" name="page-end" id="page-end" />
+                    </div>
+                </div>
+                <div class="div-article">
+                    <div class="div">
+                        <label for="article">Classificacao da Materia</label>
+                        <br />
+                        <input type="text" name="article" id="article" />
+                    </div>
+                </div>
+
+                <div class="cli-tax">
+                    <div class="div">
+                        <label for="clients">Clientes</label>
+                        <br />
+                        <input type="text" name="clients" id="clients" />
+                    </div>
+
+                    <div class="div">
+                        <label for="input-Taxonomias">Taxonomias</label>
+                        <br />
+                        <input type="text" name="input-Taxonomias" id="input-Taxonomias" />
+                    </div>
+                </div>
+            </form>
         </main>
     </body>
 </html>

@@ -1,10 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
 * {
     box-sizing: border-box;
+}
+
+hr {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 3rem 0px;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 body {
     margin: 0;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header {
     width: 100%;
     height: 5rem;
@@ -12,8 +46,324 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 2%;
     top: 0;
     left: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+header .header-sis-clipping {
+    white-space: nowrap;
+    margin-right: 2%;
+}
+header .header-sis-clipping h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: xx-large;
+    font-weight: 400;
+}
+header .header-options {
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    top: 0;
+    left: 0;
+}
+
+header .header-options h4 {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+header .header-options h4:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+header .header-options h4:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+header .header-user h4 {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+header .header-user h4:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+header .header-user h4:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.records {
+    text-align: center;
+    width: 80%;
+    margin: 0.5rem auto;
+}
+.records p {
+    text-align: right;
+}
+.records table {
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.records table tbody {
+}
+
+.records table tbody .tr1 {
+    border: #000;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    height: 2.5rem;
+}
+
+.records table tbody .tr2 {
+    border: #000;
+    height: 2.5rem;
+    white-space: nowrap;
+}
+
+.taxonomias {
+    text-align: left;
+    width: 80%;
+    margin: 0.5rem auto;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    font-family: 'Rubik', sans-serif;
+}
+
+nav {
+    font-family: 'Rubik', sans-serif;
+
+    padding: 2rem;
+}
+
+nav a {
+    font-weight: 400 !important;
+    color: #333633;
+    text-decoration: none;
+    padding: 0rem 0.5rem;
+
+    appearance: none;
+    background-color: #fafbfc;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292e;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: #f3f4f6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+
+a:disabled {
+    background-color: #fafbfc;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959da5;
+    cursor: default;
+}
+
+a:active {
+    background-color: #edeff2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+}
+
+.img-background {
+    width: 100%;
+    padding: 2rem 0px;
+    height: auto;
+    background-color: #333633;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 68rem;
+    margin: 4rem 0px;
+    margin-top: 2rem;
+    padding: 2rem 4rem;
+    padding-top: 1rem;
+    background-color: #efede7;
+    border-style: dashed;
+    border-width: 1px;
+    border-spacing: 2px;
+    border-color: #2d302d;
+    border-radius: 2px;
+}
+form .form-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+input {
+    height: 2rem;
+    background-color: #fdfbf8;
+    border: 1px groove #333633;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: medium;
+}
+.span-jornal {
+    display: block;
+    text-align: center;
+}
+.span-jornal p {
+    font-weight: 500;
+}
+
+.title-day {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 1rem;
+    margin: 1rem 0px;
+}
+.div {
+    display: block;
+    width: auto;
+    height: auto;
+}
+#title {
+    width: 35rem;
+    background-color: #fdfbf8;
+    border: 1px groove #333633;
+    margin-right: 1rem;
+}
+
+.block-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 1rem;
+    margin: 1rem 0px;
+}
+#block-title {
+    width: 20rem;
+}
+#block {
+    width: 20rem;
+}
+.block-title button {
+    background-color: #333633;
+    color: #fdfbf8;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+.edit-jour {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 1rem;
+    margin: 1rem 0px;
+}
+#Editorial {
+    width: 25rem;
+}
+#journalist {
+    width: 25rem;
+}
+.col-pag {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 1rem;
+    margin: 1rem 0px;
+}
+#column {
+    width: 25rem;
+}
+.div-page-beginning {
+    margin-left: 2.5rem;
+}
+#page-beginning {
+    width: 10rem;
+}
+#page-end {
+    width: 10rem;
+}
+.div-article {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 1rem;
+    margin: 1rem 0px;
+}
+#article {
+    width: 58rem;
+}
+
+.cli-tax {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 1rem;
+    margin: 1rem 0px;
+}
+
+#clients {
+    width: 25rem;
+    height: 10rem;
+}
+#input-Taxonomias {
+    width: 25rem;
+    height: 10rem;
 }
